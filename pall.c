@@ -7,17 +7,17 @@
 *Return: void
 */
 
-void pall(stack_t **s, unsigned int __attribute__((unused)) line)
+void pall(stack_t **s, unsigned int line __attribute__((unused)))
 {
-    stack_t *current = *s;
+stack_t *current = *s;
 
-    if (s == NULL || *s == NULL)
-    return;
+if (s == NULL || *s == NULL)
+return;
 
-    while (current != NULL)
-    {
-    printf("%d\n", current->n);
-    current = current->next;
-    }
+while (current != NULL)
+{
+printf("%d\n", current->n);
+current = current->next;
+}
 
 }
